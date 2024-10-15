@@ -1,11 +1,20 @@
-#en-tete {
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 5px solid black;
 }
 div {
   font-size: x-large;
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  text-emphasis: none;
+}
+#footer {
+  font-size: medium;
+}
+i {
 }
