@@ -14,7 +14,12 @@ a:hover {
   text-emphasis: none;
 }
 #footer {
-  font-size: medium;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 5px solid black;
 }
 i {
+  font-size: x-large;
 }
