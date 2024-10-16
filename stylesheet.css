@@ -3,12 +3,19 @@
   flex-direction: row;
   justify-content: space-around;
   border: 5px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: none;
+  align-items: center;
 }
 div {
   font-size: x-large;
 }
 a {
   text-decoration: none;
+  margin: 5em;
+  border: 5px solid black;
 }
 a:hover {
   text-emphasis: none;
@@ -22,4 +29,22 @@ a:hover {
 }
 i {
   font-size: x-large;
+}
+#logo {
+  width: 150px;
+  align-self: left;
+}
+@media screen and (max-width: 1000px) {
+  #header {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    width: 13em;
+  }
+  #footer {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    width: 13em;
+  }
 }
