@@ -1,50 +1,101 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4a90e2, #00c9ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
 #header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 5px solid black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin: none;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4a90e2;
 }
-div {
-  font-size: x-large;
-}
-a {
-  text-decoration: none;
-  margin: 5em;
-  border: 5px solid black;
-}
-a:hover {
-  text-emphasis: none;
-}
-#footer {
-  font-size: small;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 5px solid black;
-}
-i {
-  font-size: x-large;
-}
-#logo {
+
+#header .logo img {
   width: 150px;
-  align-self: left;
+  height: 150px;
 }
-@media screen and (max-width: 1000px) {
-  #header {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    width: 13em;
-  }
-  #footer {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    width: 13em;
-  }
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#header nav a:hover {
+  color: #ffcc00;
+}
+
+
+main {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#titre1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid #4a90e2;
+}
+
+
+  font-size: 16px;
+  color: #4a90e2;
+  margin: 10px 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 18px;
+}
+
+#footer a:hover {
+  color: #ffcc00;
+}
+
+#footer .fab {
+  margin: 10px;
+  color: #4a90e2;
+  font-size: 24px;
+}
+
+#footer .fab:hover {
+  color: #ffcc00;
 }
