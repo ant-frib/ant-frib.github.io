@@ -351,3 +351,35 @@ footer {
     bottom: 0px;
   }
 }
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4a90e2;
+}
+#header a {
+  padding: 2em 3em;
+  font-weight: bolder;
+}
+
+#header .logo img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: -20px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#header nav a:hover {
+  color: #ffcc00;
+}
