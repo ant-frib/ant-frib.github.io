@@ -109,3 +109,16 @@ main {
 #footer .fab:hover {
   color: #ffcc00;
 }
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

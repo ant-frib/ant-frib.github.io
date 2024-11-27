@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
 
+@keyframes pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
