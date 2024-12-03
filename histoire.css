@@ -70,7 +70,7 @@ h3 {
   padding-left: 17em;
   padding-right: 17em;
   border-radius: 10px;
-  transition: transform 1s;
+  transition: transform 2s;
 }
 .ti:hover {
   transform: translateY(0);
