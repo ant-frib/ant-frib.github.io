@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-.pulse {
+.pulse:hover {
   animation: pulse-animation 2s infinite;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .box:hover {
-  transform: scale(1.2, 1.2);
+  transform: translate (1.2, 1.2);
 }
 
 .product__img img {

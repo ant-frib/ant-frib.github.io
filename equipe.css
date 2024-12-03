@@ -30,7 +30,7 @@
 #header nav a:hover {
   color: #ffcc00;
 }
-.pulse {
+.pulse:hover {
   animation: pulse-animation 2s infinite;
 }
 

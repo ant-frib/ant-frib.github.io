@@ -34,76 +34,78 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff; /* Bleu clair rappelant l'océan */
+  background-color: #f0f8ff;
   color: #333333;
   line-height: 1.6;
 }
-#box {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px;
-  background-color: #ffffff;
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 25em;
+  margin-right: 25em;
+  font-size: 16px;
+}
+h3 {
+  padding: 0.2em;
+  border: solid black;
+  border-radius: 20px;
+}
+.ti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(17em);
+  background-color: #4a90e2;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  padding-left: 17em;
+  padding-right: 17em;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+.ti:hover {
+  transform: translateY(0);
+  transition: transform 1s;
+}
+@media screen and (max-width: 1080px) {
+  .box {
+    font-size: 12px;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    font-size: 10px;
+    width: 52%;
+  }
 }
 
-#box h2 {
-  color: #006994;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+@media screen and (max-width: 480px) {
+  .box {
+    font-size: 8px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
-
-#box h3 {
-  color: #008b8b;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-#box p {
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-}
-
-table tr:first-child {
-  font-weight: bold;
-  background-color: #e6f7ff;
-  color: #008b8b;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-table td {
-  padding: 10px;
-  border: 1px solid #008b8b;
-}
-
-table td:first-child {
-  font-weight: bold;
-  color: #006994;
-  text-align: left;
-}
-
 footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background-color: #006994;
+  background-color: ;
   color: #ffffff;
   font-size: 0.9rem;
 }
 
-.pulse {
+.pulse:hover {
   animation: pulse-animation 2s infinite;
 }
 
@@ -114,19 +116,5 @@ footer {
   }
   50% {
     transform: scale(1.1);
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  #box {
-    padding: 10px;
-  }
-
-  table {
-    font-size: 0.9rem;
   }
 }
