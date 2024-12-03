@@ -72,9 +72,8 @@ body {
   max-width: 350px;
   transition: transform 0.5s;
 }
-
-.box:hover {
-  transform: translate (1.2, 1.2);
+img {
+  border-radius: 40px;
 }
 
 .product__img img {
