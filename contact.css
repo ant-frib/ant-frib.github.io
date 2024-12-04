@@ -1,10 +1,142 @@
-.hero {
-  background-color: #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1518810370118-0fde40f8b0f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
-  background-position: center;
-  background-size: cover;
-  color: #ffffff;
-  padding: 1em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.lien:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+#header .logo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.5em;
+  padding: 1em 2em;
+
+  transition: transform 0.5s;
+}
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  padding: 0;
+}
+.ligne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
+}
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.form-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #0056b3;
+}
+
+.form-actions button:active {
+  background-color: #004085;
 }
