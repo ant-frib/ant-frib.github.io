@@ -12,7 +12,6 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <path id="curve"> </path>
     <div id="container">
       <header id="header">
         <div class="logo">
@@ -24,27 +23,31 @@
               alt="logo"
           /></a>
         </div>
-        <nav>
-          <a id="lien1" href="histoire.html">Histoire</a>
-          <a id="lien2" href="nos_produits.html">Nos Produits</a>
-          <a id="lien3" href="notre_equipe.html">Notre Équipe</a>
+        <nav class="flex">
+          <a class="lien" href="nos_produits.html">Produits</a>
+          <a class="lien" href="histoire.html">A propos</a>
+          <a class="lien" href="notre_equipe.html">Équipe</a>
+          <a class="lien" href="contact.html">Contact</a>
         </nav>
       </header>
 
       <main>
-        <img class="back" src="./image/ocan2_final.gif" alt="back" />
         <h1 class="title">O'CAN</h1>
       </main>
-
       <footer id="footer">
-        <h2>Notre adresse mail :</h2>
-        <a href="mailto:OCAN@gmail.com">OCAN@gmail.com</a>
-        <br />
-        <h2>Notre numéro :</h2>
-        <a href="tel:+33-7-67-77-90-80">07 67 77 90 80</a>
-        <h2>Suivez-nous sur :</h2>
-        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        <div class="ligne">
+          <h2>Notre adresse mail :</h2>
+          <a href="mailto:OCAN@gmail.com">OCAN@gmail.com</a>
+        </div>
+        <div class="ligne">
+          <h2>Notre numéro :</h2>
+          <a href="tel:+33-7-67-77-90-80">07 67 77 90 80</a>
+        </div>
+        <div class="ligne">
+          <h2>Suivez-nous sur :</h2>
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
       </footer>
     </div>
   </body>

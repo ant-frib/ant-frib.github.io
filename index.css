@@ -4,27 +4,44 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
+main {
+  background-image: url(./image/ocan2_final.gif);
   background-position: center;
-  flex-direction: column;
-  justify-content: space-between;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  text-align: center;
+  padding: 20em;
+  padding-top: 15em;
+}
+.title {
+  text-align: center;
+  color: white;
+  text-decoration: solid;
+  font-family: cursive;
+  font-size: 7em;
+  text-shadow: #4a90e2;
+  transform: translateX(-0.4em);
 }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 30px 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
 }
-#header a {
-  padding: 1em 1em;
-  font-weight: bolder;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.lien:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 #header .logo img {
@@ -38,40 +55,14 @@ body {
   margin: 0 15px;
   text-decoration: none;
   color: #4a90e2;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.2s ease;
+  font-size: 1.5em;
+  padding: 1em 2em;
+
+  transition: transform 0.5s;
 }
 
-#header nav a:hover {
-  transition: scale(1.2);
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-main {
-  text-align: center;
-}
-#container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  transform: translate(-0.5em, -8.5em);
-  font-size: 5em;
-  font-weight: bold;
-  color: white;
-  font-family: Bradley Hand, cursive;
-}
-h1 {
-  font-size: xx-large;
-  font-weight: bold;
-}
 #footer {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,9 +70,16 @@ h1 {
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px 60px;
   text-align: center;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  padding: 0;
+}
+.ligne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .pulse {
   animation: pulse-animation 2s infinite;

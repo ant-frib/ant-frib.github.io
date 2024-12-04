@@ -1,42 +1,8 @@
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 60px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #4a90e2;
-}
-#header a {
-  padding: 2em 3em;
-  font-weight: bolder;
-}
-
-#header .logo img {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  left: -20px;
-}
-
-#header nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #4a90e2;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#header nav a:hover {
-  color: #ffcc00;
-}
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f8ff;
   color: #333333;
-  line-height: 1.6;
 }
 .all {
   display: flex;
@@ -63,7 +29,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translateY(17em);
+  transform: translateY(14em);
   background-color: #4a90e2;
   padding-top: 7em;
   padding-bottom: 7em;
@@ -96,19 +62,67 @@ h3 {
     padding-right: 2em;
   }
 }
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  background-color: ;
-  color: #ffffff;
-  font-size: 0.9rem;
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
-.pulse:hover {
+.lien:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+#header .logo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.5em;
+  padding: 1em 2em;
+
+  transition: transform 0.5s;
+}
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  padding: 0;
+}
+.ligne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pulse {
   animation: pulse-animation 2s infinite;
 }
-
 @keyframes pulse-animation {
   0%,
   100% {
