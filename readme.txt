@@ -4,7 +4,7 @@ Ce site est conçu pour vous offrir une expérience simple et accessible à tous
 Que vous soyez un particulier ou un professionnel, notre plateforme répond à vos besoins grâce à ses fonctionnalités pratiques.
 
 ## lien vers notre site :
-ant-frib/OCAN/html/index.html
+OCAN/html/index.html
 ---
 
 ## 🛠️ Fonctionnalités principales
