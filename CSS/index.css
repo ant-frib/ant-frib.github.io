@@ -1,7 +1,28 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+main {
+  background-image: url(../image/ocan2_final.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20em;
+  padding-top: 15em;
+}
+.title {
+  text-align: center;
+  color: white;
+  text-decoration: solid;
+  font-family: cursive;
+  font-size: 7em;
+  text-shadow: #4a90e2;
+  transform: translateX(-0.4em);
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -15,6 +36,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .lien:hover {
@@ -35,6 +57,7 @@
   color: #4a90e2;
   font-size: 1.5em;
   padding: 1em 2em;
+
   transition: transform 0.5s;
 }
 
