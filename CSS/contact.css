@@ -4,13 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #4a90e2;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  padding: 20px 10px;
+  background-color: #FFFFFF;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .lien:hover {
@@ -30,31 +44,22 @@
   text-decoration: none;
   color: #4a90e2;
   font-size: 1.5em;
-  padding: 1em 2em;
-
+  padding: 1em 1em;
   transition: transform 0.5s;
 }
 
 #footer {
-  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-  margin: 0;
-  padding: 0;
+  align-items: left;
+  justify-content: left;
+  background-color: #FFFFFF;
+  text-align: left;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: #4a90e2;
+  padding: 10px 10px
 }
-.ligne {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .pulse {
   animation: pulse-animation 2s infinite;
 }
@@ -71,7 +76,8 @@
 
 .form-container h2 {
   margin-bottom: 20px;
-  color: #333;
+  color:#4a90e2;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .form-container {
@@ -81,8 +87,6 @@
   align-items: center;
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
 }
@@ -93,7 +97,8 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #555;
+  color:#4a90e2;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .form-group input,
@@ -110,9 +115,8 @@
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border-color: #007bff;
+  border-color:#4a90e2;
   outline: none;
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
 }
 .form-group textarea {
   height: 100px;
@@ -123,7 +127,7 @@
 }
 
 .form-actions button {
-  background-color: #007bff;
+  background-color:#4a90e2;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -133,9 +137,6 @@
 }
 
 .form-actions button:hover {
-  background-color: #0056b3;
+  background-color: #085399;
 }
 
-.form-actions button:active {
-  background-color: #004085;
-}

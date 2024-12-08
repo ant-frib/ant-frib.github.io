@@ -1,20 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #4a90e2;
+}
+
+main {
+  background-color: #4a90e2;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 10%;
+  font-family: "Gill Sans Extrabold", sans-serif;;
+  font-size: 120%;
+}
+
+img {
+  width: 10em;
+  height: 10em;
+  }
+
+.void_container {
+  width: 5em;
+}
+
+.flex2 {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+h2 {
+  text-align: left;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  padding: 20px 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 8px #085399;
 }
+
 .flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:left;
+  align-items: left;
   flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 .lien:hover {
@@ -34,30 +78,23 @@
   text-decoration: none;
   color: #4a90e2;
   font-size: 1.5em;
-  padding: 1em 2em;
+  padding: 1em 1em;
   transition: transform 0.5s;
 }
 
-#footer {
-  background-color: rgba(255, 255, 255, 0.9);
+#footer { 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-  margin: 0;
-  padding: 0;
+  align-items: left;
+  justify-content: left;
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 8px #085399;
+  text-align: left;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: #4a90e2;
+  padding: 10px 10px
 }
-.ligne {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .pulse {
   animation: pulse-animation 2s infinite;
 }
@@ -71,20 +108,5 @@
     transform: scale(1.1);
   }
 }
-.founders-img {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.signature {
-  margin-top: 1rem;
-  font-style: italic;
-}
 
-.rounded-img {
-  border-radius: 8px;
-}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color:#4a90e2;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 11em;
+}
+
+h1{
+  color: #FFFFFF;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 300%
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 8px #085399;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.lien:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+#header .logo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.5em;
+  padding: 1em 1em;
+  transition: transform 0.5s;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 8px #085399;
+  text-align: left;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: #4a90e2;
+  padding: 10px 10px
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

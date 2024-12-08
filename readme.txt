@@ -10,11 +10,11 @@ Que vous soyez un particulier ou un professionnel, notre plateforme répond à v
 ## 🛠️ Fonctionnalités principales
 
 ### 1. **Barre de navigation intuitive**
-- Retrouvez facilement les sections principales du site (Produits,A propos, Equipe, contact).
+- Retrouvez facilement les sections principales du site (Acceuil, Produits, A propos, Equipe, Contact, Panier).
 - La barre de navigation est accessible depuis toutes les pages pour une expérience fluide.
 
 ### 2. **Catalogue**
-- Parcourez notre catalogue de cannettes d’eau disponibles en plusieurs options : simple ou sport.
+- Parcourez notre catalogue de cannettes d’eau disponibles en plusieurs options : simple ou sport +.
 
 
 ### 3. **Accessibilité pour tout public**
@@ -27,7 +27,7 @@ Que vous soyez un particulier ou un professionnel, notre plateforme répond à v
 
 ### 1. **Naviguez**
 - Utilisez la barre de navigation pour explorer les différentes pages (Produits,A propos, Equipe, contact).
-- Consultez les fiches produits pour obtenir des informations détaillées (prix, volume, options disponibles).
+- Consultez les fiches produits pour obtenir des informations détaillées.
 
 
 ## 📞 Assistance
