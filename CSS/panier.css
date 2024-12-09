@@ -5,17 +5,11 @@
 }
 
 main {
-  background-color:#4a90e2;
+  background-color: #4a90e2;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 11em;
-}
-
-h1{
-  color: #FFFFFF;
-  font-family: "Gill Sans Extrabold", sans-serif;
-  font-size: 300%
+  padding: 15em;
 }
 
 #header {
@@ -23,7 +17,7 @@ h1{
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px -4px 8px #085399;
 }
 
@@ -34,7 +28,40 @@ h1{
   flex-direction: row;
   font-family: "Gill Sans Extrabold", sans-serif;
 }
+.panier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Gill Sans Extabold", sans-serif;
+  background-color: #ffffff;
+  color: #4a90e2;
+  width: 50%;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  transition-duration: 9999s;
+  gap: 2em;
+}
 
+.panier:hover {
+  transition-duration: 5s;
+  box-shadow: 10px 10px 10px #085399;
+  width: 100%;
+
+  padding-bottom: 15em;
+  gap: 7em;
+}
+.content {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: solid black;
+  width: 100%;
+  border-radius: 10px;
+}
+#caddy {
+  font-size: 10em;
+  padding: 0.5em;
+}
 .lien:hover {
   transform: scale(1.2);
   transition: transform 0.5s;
@@ -61,12 +88,12 @@ h1{
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px -4px 8px #085399;
   text-align: left;
   font-family: "Gill Sans Extrabold", sans-serif;
   color: #4a90e2;
-  padding: 10px 10px
+  padding: 10px 10px;
 }
 
 .pulse {

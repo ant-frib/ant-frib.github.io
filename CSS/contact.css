@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: #4a90e2;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 15em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .flex {
@@ -53,11 +61,11 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: left;
   font-family: "Gill Sans Extrabold", sans-serif;
   color: #4a90e2;
-  padding: 10px 10px
+  padding: 10px 10px;
 }
 
 .pulse {
@@ -73,10 +81,14 @@ body {
     transform: scale(1.1);
   }
 }
-
+.form-container:hover {
+  transform: scale(1.5);
+  transition-duration: 2.5s;
+  box-shadow: 10px 10px 10px #085399;
+}
 .form-container h2 {
   margin-bottom: 20px;
-  color:#4a90e2;
+  color: #4a90e2;
   font-family: "Gill Sans Extrabold", sans-serif;
 }
 
@@ -86,9 +98,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  padding: 20px;
-  max-width: 400px;
+  padding: 5em;
+  max-width: 600px;
   width: 100%;
+  transition-duration: 5s;
 }
 .form-group {
   margin-bottom: 15px;
@@ -97,7 +110,7 @@ body {
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color:#4a90e2;
+  color: #4a90e2;
   font-family: "Gill Sans Extrabold", sans-serif;
 }
 
@@ -115,7 +128,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border-color:#4a90e2;
+  border-color: #4a90e2;
   outline: none;
 }
 .form-group textarea {
@@ -127,7 +140,7 @@ body {
 }
 
 .form-actions button {
-  background-color:#4a90e2;
+  background-color: #4a90e2;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -139,4 +152,3 @@ body {
 .form-actions button:hover {
   background-color: #085399;
 }
-
