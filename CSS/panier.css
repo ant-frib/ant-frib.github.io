@@ -54,9 +54,8 @@ main {
 .content {
   background-color: #4a90e2;
   color: #ffffff;
-  border: solid black;
+
   width: 100%;
-  border-radius: 10px;
 }
 #caddy {
   font-size: 10em;
