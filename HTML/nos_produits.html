@@ -84,8 +84,16 @@
     <footer id="footer">
         <h3>Logo genéré par IA (Dall E)</h3>
 				<br>
-				<h3>Gifs O'CAN faits par LAUVRAY Edouard, tous droits réservés.</h3>
+				<h3><span class="material-icons">copyright</span> O'CAN, tous droits réservés.</h3>
       </footer>
     </div>
+    <script>
+        const btn = document.querySelectorAll(".buy");
+        btn.forEach((b) => {
+            b.addEventListener("click", function(e) {
+                alert("Oups ! Ce produit n'est pas disponible pour le moment.")
+            })
+        })
+    </script>
   </body>
 </html>

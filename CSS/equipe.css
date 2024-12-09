@@ -13,7 +13,7 @@ body {
 
 main {
   background-color: #4a90e2;
-  color: #FFFFFF;
+  color: #4a90e2;
   text-align: left;
   padding-top: 1em;
   padding-left: 2em;
@@ -37,6 +37,9 @@ img {
   align-items: center;
   flex-direction: row;
   font-family: "Gill Sans Extrabold", sans-serif;
+  background-color: #FFFFFF;
+  border-radius: 10em;
+  padding: 2em 2em;
 }
 
 h2 {
