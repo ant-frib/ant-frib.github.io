@@ -18,30 +18,33 @@ main {
   padding-top: 1em;
   padding-left: 2em;
   padding-right: 10%;
-  font-family: "Gill Sans Extrabold", sans-serif;;
+  font-family: "Gill Sans Extrabold", sans-serif;
   font-size: 120%;
 }
 
 img {
   width: 10em;
   height: 10em;
-  }
-
-.void_container {
-  width: 5em;
 }
 
 .flex2 {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
   flex-direction: row;
   font-family: "Gill Sans Extrabold", sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10em;
-  padding: 2em 2em;
+  padding: 2em;
+  margin-left: 7em;
+  gap: 3em;
+  transition-duration: 1s;
 }
-
+.flex2:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+  box-shadow: 10px 10px 10px #085399;
+}
 h2 {
   text-align: left;
   font-family: "Gill Sans Extrabold", sans-serif;
@@ -52,13 +55,13 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px -4px 8px #085399;
 }
 
 .flex {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: left;
   flex-direction: row;
   font-family: "Gill Sans Extrabold", sans-serif;
@@ -85,17 +88,17 @@ h2 {
   transition: transform 0.5s;
 }
 
-#footer { 
+#footer {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px -4px 8px #085399;
   text-align: left;
   font-family: "Gill Sans Extrabold", sans-serif;
   color: #4a90e2;
-  padding: 10px 10px
+  padding: 10px 10px;
 }
 
 .pulse {
@@ -111,5 +114,3 @@ h2 {
     transform: scale(1.1);
   }
 }
-
-
