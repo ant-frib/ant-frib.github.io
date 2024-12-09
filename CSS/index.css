@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 main {
   background-image: url(../image/ocan2_final.gif);
   background-position: center;
@@ -12,6 +11,13 @@ main {
   text-align: center;
   padding: 20em;
   padding-top: 15em;
+}
+
+.presentation {
+    text-align: center;
+    padding-bottom: 5em;
+    background-color: #4a90e2;
+    
 }
 .title {
   text-align: center;
