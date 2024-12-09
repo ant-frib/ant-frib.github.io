@@ -4,7 +4,7 @@ Ce site est conçu pour vous offrir une expérience simple et accessible à tous
 Que vous soyez un particulier ou un professionnel, notre plateforme répond à vos besoins grâce à ses fonctionnalités pratiques.
 
 ## lien vers notre site :
-#groupe1CIR1.github.io/HTML/index.html
+#ant-frib.github.io/HTML/index.html
 ---
 
 ## 🛠️ Fonctionnalités principales
