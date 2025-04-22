@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O'CAN - Produits</title>
-    <script src="note.js" defer></script>
+    <script src="../JS/produit.js" defer></script>
+    <script src="../JS/common.js" defer></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -33,9 +34,10 @@
           <a class="lien" href="./histoire.html">A propos</a>
           <a class="lien" href="./notre_equipe.html">Équipe</a>
           <a class="lien" href="./contact.html">Contact</a>
-          <a class="lien" href="./panier.html"
-            ><span class="material-icons">shopping_cart</span></a
-          >
+          <a class="lien" href="./panier.html">
+            <span id="icon" class="material-icons">shopping_cart</span>
+            <link id="notif"
+          /></a>
         </nav>
       </header>
       <div class="container">
@@ -62,7 +64,7 @@
           </div>
 
           <div class="product_buttons">
-            <button class="btn buy">Acheter - 1.10€</button>
+            <button id="classic" class="btn buy">Acheter - 1.10€</button>
           </div>
         </div>
         <div class="box">
@@ -88,7 +90,7 @@
           </div>
 
           <div class="product_buttons">
-            <button class="btn buy">Acheter - 1.60€</button>
+            <button id="sport" class="btn buy">Acheter - 1.60€</button>
           </div>
         </div>
       </div>
