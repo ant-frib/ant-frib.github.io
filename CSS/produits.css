@@ -3,80 +3,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans Extrabold", sans-serif;;
+  font-family: "Gill Sans Extrabold", sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #4a90e2;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #4a90e2;
+}
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-    background-color: #FFFFFF;
-    box-shadow: 0px -4px 8px #085399;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 8px #085399;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.lien:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+#header .logo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.5em;
+  padding: 1em 1em;
+  transition: transform 0.5s;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 8px #085399;
+  text-align: left;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: #4a90e2;
+  padding: 10px 10px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
   }
-  
-  .flex {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: row;
-    font-family: "Gill Sans Extrabold", sans-serif;
+  50% {
+    transform: scale(1.1);
   }
-  
-  .lien:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s;
-  }
-  
-  #header .logo img {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 20px;
-  }
-  
-  #header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #4a90e2;
-    font-size: 1.5em;
-    padding: 1em 1em;
-    transition: transform 0.5s;
-  }
-  
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    background-color: #FFFFFF;
-    box-shadow: 0px -4px 8px #085399;
-    text-align: left;
-    font-family: "Gill Sans Extrabold", sans-serif;
-    color: #4a90e2;
-    padding: 10px 10px
-  }
-  
-  .pulse {
-    animation: pulse-animation 2s infinite;
-  }
-  
-  @keyframes pulse-animation {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-  }
+}
 
 .container {
   max-width: 1200px;
@@ -107,29 +107,29 @@ body {
 
 .product__disc h1 {
   font-size: 2rem;
-  color:#4a90e2;
+  color: #4a90e2;
   margin-bottom: 1rem;
 }
 
 .product__disc span {
   font-size: 1.3rem;
   font-style: italic;
-  color:#4a90e2;
+  color: #4a90e2;
   margin-bottom: 1.5rem;
   display: block;
 }
 
 .product__disc p {
   font-size: 1.1rem;
-  color:#707070;
+  color: #707070;
   margin-bottom: 1.5rem;
 }
 
 .product_buttons {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-
+  padding: 2rem;
+  padding-left: 5em;
 }
 
 .product_buttons .btn {
@@ -146,12 +146,33 @@ body {
 }
 
 .product_buttons .btn.buy {
-  background-color:#4a90e2;
-  color: #fff;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .product_buttons .btn.buy:hover {
-  background-color:#085399;
+  background-color: #085399;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.product_buttons .btn.buy:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.4);
+}
+
+.product_buttons .btn.buy:hover {
+  background-color: #085399;
 }
 
 @media (max-width: 768px) {

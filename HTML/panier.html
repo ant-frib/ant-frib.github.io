@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O'CAN - Panier</title>
     <script src="../JS/common.js" defer></script>
+    <script src="../JS/panier.js" defer></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -40,15 +41,60 @@
       </header>
       <main>
         <div class="panier">
-          <span id="caddy" class="material-icons">shopping_cart</span>
-          <h1 class="content">Voici le contenu de votre panier :</h1>
+          <h1 class="titre-panier">Votre Panier</h1>
 
-          <div id="pan">
-            <div>O'CAN :</div>
-            <div>O'CAN Sport + :</div>
+          <div class="produit">
+            <img
+              src="../image/gif_ocan.gif"
+              alt="O'CAN"
+              class="produit-image"
+            />
+            <div class="produit-info">
+              <h2>O'CAN</h2>
+              <span class="prix-unitaire">1.10€</span>
+              <div class="controle-quantite">
+                <button id="boutonClic" class="btn-moins">-</button>
+                <span id="nombreClics" class="quantite">0</span>
+                <button id="boutonClic2" class="btn-plus">+</button>
+              </div>
+              <div class="total-produit">
+                Total : <span id="totalOcan">0.00€</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="produit">
+            <img
+              src="../image/gif_ocan_sport+.gif"
+              alt="O'CAN Sport +"
+              class="produit-image"
+            />
+            <div class="produit-info">
+              <h2>O'CAN Sport +</h2>
+              <span class="prix-unitaire">1.60€</span>
+              <div class="controle-quantite">
+                <button id="boutonClic4" class="btn-moins">-</button>
+                <span id="nombreClics1" class="quantite">0</span>
+                <button id="boutonClic3" class="btn-plus">+</button>
+              </div>
+              <div class="total-produit">
+                Total : <span id="totalOcanSport">0.00€</span>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="total-general">
+          <p>Total HT : <span id="totalHT">0.00€</span></p>
+          <p>TVA (20%) : <span id="tva">0.00€</span></p>
+          <p>Taxe de livraison (30%) : <span id="douane">0.00€</span></p>
+          <p>
+            <strong>Total TTC : <span id="totalTTC">0.00€</span></strong>
+          </p>
+
+          <button class="btn-paiement" onClick="Message()">Passer au paiement</button>
+        </div>
       </main>
+
       <footer id="footer">
         <h3>Logo genéré par IA (Dall E)</h3>
         <br />
@@ -57,6 +103,8 @@
           réservés.
         </h3>
       </footer>
+    </div>
+    
     </div>
   </body>
 </html>
