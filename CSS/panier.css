@@ -36,20 +36,19 @@ main {
   font-family: "Gill Sans Extabold", sans-serif;
   background-color: #ffffff;
   color: #4a90e2;
-  width: 50%;
+  width: 100%;
   padding-top: 0em;
-  padding-bottom: 0em;
+  padding-bottom: 10em;
   transition-duration: 9999s;
   gap: 2em;
 }
-
-.panier:hover {
-  transition-duration: 3s;
-  box-shadow: 10px 10px 10px #085399;
-  width: 100%;
-
-  padding-bottom: 15em;
-  gap: 7em;
+#pan {
+  padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
 }
 .content {
   background-color: #4a90e2;
