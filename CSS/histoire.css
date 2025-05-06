@@ -17,7 +17,7 @@ h2 {
   text-decoration: underline;
 }
 
-p {
+.para {
   border: solid white 5px;
   padding: 5em;
   background-color: #ffffff;

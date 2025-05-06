@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O'CAN - Accueil</title>
     <script src="../JS/common.js" defer></script>
+    <script src="../JS/general.js" defer></script>
+    <link rel="stylesheet" href="../CSS/general.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -16,6 +18,9 @@
     <link rel="stylesheet" href="../CSS/histoire.css" />
   </head>
   <body>
+    <div id="loader">
+      <img src="../image/gif_ocan.gif" alt="Chargement..." />
+    </div>
     <div id="container">
       <header id="header">
         <div class="logo">
@@ -42,7 +47,7 @@
         <div class="all">
           <div class="hist">
             <h2>Notre Histoire</h2>
-            <p>
+            <p class="para">
               Chez O'CAN, nous croyons en un futur où l'hydratation de qualité
               ne compromet pas la planète. Tout a commencé en 2020, quand nos
               fondateurs, passionnés par l'innovation et la durabilité, ont
@@ -62,7 +67,7 @@
 
           <div class="val">
             <h2>Nos Valeurs</h2>
-            <p>
+            <p class="para">
               Une eau de source d'une qualité exceptionnelle, rigoureusement
               testée. Innovation : Des canettes design, légères et hermétiques,
               pour une fraîcheur incomparable. Durabilité : Nos canettes en
