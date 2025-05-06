@@ -107,6 +107,20 @@ body {
   margin-bottom: 15px;
 }
 
+#clock {
+  font-size: 1.5em;
+  color: #4a90e2;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+#timer {
+  font-size: 1.1em;
+  color: #e74c3c;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
 .form-group label {
   display: block;
   margin-bottom: 5px;
