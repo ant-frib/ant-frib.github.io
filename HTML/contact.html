@@ -6,6 +6,7 @@
     <title>O'CAN - Contact</title>
     <script src="../JS/common.js" defer></script>
     <script src="../JS/general.js" defer></script>
+    <script src="../JS/contact.js" defer></script>
     <link rel="stylesheet" href="../CSS/general.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -48,7 +49,7 @@
       <main>
         <div class="form-container">
           <h2>Contactez-nous</h2>
-          <form action="#" method="post">
+          <form id="contactForm" action="#" method="post">
             <div class="form-group">
               <br />
               <input
@@ -87,11 +88,37 @@
               ></textarea>
             </div>
             <div class="form-actions">
-              <button type="submit">Envoyer</button>
+              <button type="button" id="submitBtn">Envoyer</button>
             </div>
           </form>
         </div>
       </main>
+
+      <!-- Modal pour le morpion -->
+      <div id="ticTacToeModal" class="modal">
+        <div class="modal-content">
+          <h2>Gagnez pour envoyer votre message!</h2>
+          <div id="ticTacToeBoard">
+            <div class="row">
+              <div class="cell" data-index="0"></div>
+              <div class="cell" data-index="1"></div>
+              <div class="cell" data-index="2"></div>
+            </div>
+            <div class="row">
+              <div class="cell" data-index="3"></div>
+              <div class="cell" data-index="4"></div>
+              <div class="cell" data-index="5"></div>
+            </div>
+            <div class="row">
+              <div class="cell" data-index="6"></div>
+              <div class="cell" data-index="7"></div>
+              <div class="cell" data-index="8"></div>
+            </div>
+          </div>
+          <div id="gameResult"></div>
+        </div>
+      </div>
+
       <footer id="footer">
         <h3>Logo genéré par IA (Dall E)</h3>
         <br />

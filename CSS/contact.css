@@ -153,3 +153,64 @@
     background-color: #085399;
   }
   
+/* ... (contenu existant reste inchangé) ... */
+
+/* Styles pour la modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles pour le plateau de morpion */
+#ticTacToeBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #4a90e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #085399;
+}
+
+#gameResult {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4a90e2;
+}
