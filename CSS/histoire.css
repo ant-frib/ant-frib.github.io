@@ -39,7 +39,7 @@ h2 {
   font-size: larger;
   transition-duration: 1s;
 }
-p:hover {
+.para:hover {
   transform: scale(1.1);
   transition-duration: 1s;
   box-shadow: 10px 10px 10px #085399;

@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     const loader = document.getElementById("loader");
     if (loader) loader.style.display = "none";
-  }, 1000);
+  }, 2000);
 });
 
 function updateClock() {
@@ -28,3 +28,26 @@ function updateTimer() {
 updateClock();
 setInterval(updateClock, 1000); // Mise à jour de l'horloge chaque seconde
 setInterval(updateTimer, 1000); // Mise à jour du chronomètre chaque seconde
+
+function handlePhoneClick(phoneNumber) {
+  // Copie dans le presse-papier
+  navigator.clipboard.writeText(phoneNumber).then(() => {
+    // Affiche le prompt
+    const userInput = prompt(
+      `Si vous voulez appeler ce numéro: ${phoneNumber}, entrez le de nouveau dans le champ ci-dessous puis validez`
+    );
+
+    if (userInput === phoneNumber) {
+      console.log(`vous appelez ce numéro: ${phoneNumber}`);
+
+      // Jouer une sonnerie
+      const audio = new Audio("../toilet-ananas-nasdas.mp3");
+      audio.play();
+
+      // Arrêter après 5 secondes
+      setTimeout(() => {
+        audio.pause();
+      }, 5000);
+    }
+  });
+}
