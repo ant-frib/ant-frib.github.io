@@ -96,8 +96,8 @@ body {
   }
 }
 .form-container:hover {
-  transform: scale(1.5);
-  transition-duration: 2.5s;
+  transform: scale(1.2);
+  transition-duration: 1s;
   box-shadow: 10px 10px 10px #085399;
 }
 .form-container h2 {
@@ -115,7 +115,7 @@ body {
   padding: 5em;
   max-width: 600px;
   width: 100%;
-  transition-duration: 5s;
+  transition-duration: 1s;
 }
 .form-group {
   margin-bottom: 15px;
@@ -189,6 +189,9 @@ body {
   max-width: 400px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #4a90e2;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 12px;
 }
 
 /* Styles pour le plateau de morpion */

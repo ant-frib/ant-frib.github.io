@@ -59,7 +59,7 @@ function comptagem2() {
   }
 }
 function Message() {
-  var msg = "Vous n'avez pas assez d'argent (sale pauvre)";
+  var msg = "Vous n'avez cet argent (sale pauvre)";
   alert(msg);
 }
 // Ajout des événements de comptage
