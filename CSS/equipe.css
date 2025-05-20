@@ -27,6 +27,20 @@ main {
   height: 10em;
 }
 
+#clock {
+  font-size: 1.5em;
+  color: #4a90e2;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+#timer {
+  font-size: 1.1em;
+  color: #e74c3c;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
 .flex2 {
   display: flex;
   justify-content: left;
