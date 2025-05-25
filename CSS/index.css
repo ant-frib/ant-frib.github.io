@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 main {
+  background-color: #4a90e2;
   background-image: url(../image/ocan2_final.gif);
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
   padding: 20em;
@@ -18,13 +19,17 @@ main {
   padding-bottom: 5em;
   background-color: #4a90e2;
 }
+
+.presentation :hover {
+    transform: scale(2);
+}
+
 .title {
   text-align: center;
   color: white;
   text-decoration: solid;
   font-family: cursive;
   font-size: 700%;
-  transform: translateX(-4%);
 }
 
 #header {
@@ -104,3 +109,11 @@ main {
     transform: scale(1.1);
   }
 }
+
+#slogan {
+    margin-top: 3em;
+    color: white;
+    font-family: cursive;
+    font-size: 290%;
+}
+
